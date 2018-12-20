@@ -13,7 +13,7 @@ name = 'imagehoster'
 num_workers = 1
 
 # url to steemd node used for verifying signatures
-rpc_node = 'https://api.steemit.com'
+rpc_node = 'http://localhost:3001'
 
 # url where service is running
 service_url = 'http://localhost:8800'
@@ -22,7 +22,7 @@ service_url = 'http://localhost:8800'
 default_avatar = 'https://steemitimages.com/DQmb2HNSGKN3pakguJ4ChCRjgkVuDN9WniFRPmrxoJ4sjR4'
 
 # log level to output at
-log_level = 'debug'
+log_level = 'info'
 
 # where to write logs, can be file path or stdout/err
 log_output = 'stdout'

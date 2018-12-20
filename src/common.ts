@@ -2,7 +2,6 @@
 
 import {AbstractBlobStore} from 'abstract-blob-store'
 import * as config from 'config'
-import {Client} from 'dsteem'
 import {IRouterContext} from 'koa-router'
 import * as Redis from 'redis'
 
@@ -15,8 +14,8 @@ export interface KoaContext extends IRouterContext {
     tag: (metadata: any) => void
 }
 
-/** Steemd (jussi) RPC client. */
-export const rpcClient = new Client(config.get('rpc_node'))
+// /** Steemd (jussi) RPC client. */
+// export const rpcClient = new Client(config.get('rpc_node'))
 
 /** Redis client. */
 export let redisClient: Redis.RedisClient | undefined
