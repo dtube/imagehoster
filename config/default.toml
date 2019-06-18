@@ -19,7 +19,7 @@ rpc_node = 'http://localhost:3001'
 service_url = 'http://localhost:8800'
 
 # default user avatar, should be a png minimum 512x512
-default_avatar = 'https://about.d.tube/default-avatar.png'
+default_avatar = 'https://about.d.tube/img/default-avatar.png'
 
 # log level to output at
 log_level = 'info'
