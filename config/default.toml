@@ -13,7 +13,7 @@ name = 'imagehoster'
 num_workers = 1
 
 # url to steemd node used for verifying signatures
-rpc_node = 'http://localhost:3001'
+rpc_node = 'https://avalon.d.tube'
 
 # url where service is running
 service_url = 'http://localhost:8800'
