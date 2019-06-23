@@ -35,7 +35,7 @@ export async function avatarHandler(ctx: KoaContext) {
 
     APIError.assert(account, APIError.Code.NoSuchAccount)
 
-    let avatarUrl: string = DefaultAvatar
+    let avatarUrl: string = DefaultAvatar+username
     if (account && account.json && account.json.profile &&
         account.json.profile.avatar &&
         account.json.profile.avatar.match(/^https?:\/\//)) {
