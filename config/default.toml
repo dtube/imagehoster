@@ -19,7 +19,7 @@ rpc_node = 'https://avalon.d.tube'
 service_url = 'http://localhost:8800'
 
 # default user avatar, should be a png minimum 512x512
-default_avatar = 'https://about.d.tube/img/default-avatar.png'
+default_avatar = 'https://robohash.org/'
 
 # log level to output at
 log_level = 'info'
