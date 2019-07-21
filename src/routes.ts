@@ -7,7 +7,9 @@ import {KoaContext} from './common'
 import {legacyProxyHandler} from './legacy-proxy'
 import {proxyHandler} from './proxy'
 import {serveHandler} from './serve'
+import {tribeHandler} from './tribes'
 import {uploadHandler} from './upload'
+
 
 const version = require('./version')
 const router = new Router()
@@ -26,5 +28,6 @@ router.get('/u/:username/avatar/:size?', avatarHandler as any)
 router.get('/:width(\\d+)x:height(\\d+)/:url(.*)', legacyProxyHandler as any)
 router.get('/p/:url', proxyHandler as any)
 router.get('/:hash/:filename?', serveHandler as any)
+router.get('/tribe/:tribename/:size?', tribeHandler as any)
 
 export const routes = router.routes()
